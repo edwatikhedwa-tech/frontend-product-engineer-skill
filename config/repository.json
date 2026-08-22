@@ -1,0 +1,8 @@
+{
+  "name": "frontend-product-engineer-skill",
+  "canonical_repository": "https://github.com/edwatikhedwa-tech/frontend-product-engineer-skill",
+  "version": "0.1.0",
+  "update_strategy": "git-fast-forward-only",
+  "runtime_copy": "Local installations are copied runtime bundles; GitHub remains the canonical source.",
+  "network_policy": "The skill remains usable offline after installation. Live documentation is consulted only when needed for version-sensitive work."
+}
