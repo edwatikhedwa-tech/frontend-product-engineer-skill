@@ -2,7 +2,7 @@ interface:
   display_name: "Frontend Product Engineer"
   short_description: "Create, redesign, extend, and review frontend products with browser evidence and strict quality gates."
   brand_color: "#0F172A"
-  default_prompt: "Use $frontend-product-engineer. Determine CREATE, REDESIGN, EXTEND, or REVIEW mode, then follow the browser-first quality gate."
+  default_prompt: "Use $frontend-product-engineer. Determine the mode, run the Design Director before substantial UI work, synthesize references, and pass separate Visual and Engineering quality gates."
 
 policy:
   allow_implicit_invocation: true
