@@ -31,3 +31,11 @@ Context: adding experience from a project case.
 Evidence: project-specific implementation details do not generalize safely.
 Rule: deduplicate each lesson into a short, framework-agnostic rule before adding it here.
 Avoid: copying a one-off workaround into universal guidance.
+
+## Candidate lessons awaiting case artifact
+
+### CANDIDATE-0001 — Defect-free can still be generic
+Evidence status: user-provided summary of CASE-0001; the historical case files are not present in this checkout and have not been independently verified.
+Observation: a process can enforce browser evidence, responsive checks, overflow checks, content stress, independent review, and P0/P1/P2 fixes while still accepting an interface that is too close to generic enterprise SaaS.
+Candidate rule: require a Design Director direction, design rationale, visual-identity test, anti-generic gate, and transformation gate in addition to engineering quality checks.
+Promotion condition: confirm against the original case artifacts or a future comparable case before treating this as fully verified stable memory.

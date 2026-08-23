@@ -21,6 +21,8 @@
 
 USE A LIBRARY BECAUSE IT SOLVES A REAL PROBLEM, NOT BECAUSE IT EXISTS.
 
+Do not confuse component library sophistication with product design sophistication. A component library can provide accessible primitives and consistent mechanics, but it cannot decide product personality, composition, hierarchy, art direction, or design rationale.
+
 Before adding a dependency, state the problem, the native/project alternative, the accessibility and maintenance tradeoff, and why the dependency is justified. Do not create an npm zoo.
 
 ## Version-sensitive protocol
