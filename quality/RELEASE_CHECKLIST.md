@@ -7,8 +7,10 @@
 - [ ] Project checks pass at the appropriate level.
 - [ ] Real app starts using the documented command.
 - [ ] Browser evidence exists for important flows and viewports.
+- [ ] Audit → fix → verify → re-audit was completed after implementation.
 - [ ] Stress content and long-content behavior are checked.
 - [ ] Overflow/clipping and intentional scroll regions are understood.
+- [ ] Console, runtime, failed-request, and relevant network behavior are checked where tooling permits.
 - [ ] Accessibility evidence exists and manual gaps are stated.
 - [ ] Independent review happened after implementation.
 - [ ] Anti-generic gate passed; identity and distinctiveness are supported by rendered evidence.

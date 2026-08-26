@@ -52,7 +52,7 @@ Product/user/task reason → design principle → concrete UI decision → expec
 Example:
 
 ```text
-Frequent supplier comparison → rapid scanning matters → stable aligned result rows with restrained emphasis → faster comparison at 1024px and 390px screenshots.
+ Frequent record comparison → rapid scanning matters → stable aligned result rows with restrained emphasis → faster comparison at 1024px and 390px screenshots.
 ```
 
 Do not accept rationale such as “modern”, “clean”, “premium”, “looks good”, or “the library defaults”. Name the product reason and the observable consequence.

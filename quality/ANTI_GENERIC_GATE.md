@@ -15,6 +15,10 @@ Fail and return to the Design Director stage when one or more of these is true w
 - hierarchy is only font-size + bold + color with no spatial or structural logic;
 - component-library defaults determine the design direction;
 - the result is a token restyle with no meaningful change in composition, information emphasis, or interaction character.
+- excessive rounded cards, inconsistent radii, or arbitrary shadows become the default language without a product reason;
+- gradients, glassmorphism, animation, badges, icons, or UI chrome add decoration without improving product meaning or feedback;
+- repeated identical cards, arbitrary colors, generic dashboard patterns, or excessive containers make the interface interchangeable;
+- typography, spacing, borders, or component states vary without a system or an explicit product reason.
 
 ## Review questions
 
@@ -26,6 +30,8 @@ Fail and return to the Design Director stage when one or more of these is true w
 6. What would a senior designer criticize immediately?
 7. Does the identity survive a state change and a narrow viewport?
 8. Is there unnecessary decoration or ornamental complexity?
+9. Are rounded cards, gradients, shadows, radii, icons, badges, colors, animation, and chrome justified by the product context?
+10. Does the interface preserve personality and hierarchy in loading, empty, error, and narrow states?
 
 ## Evidence and disposition
 

@@ -27,7 +27,7 @@ def next_number(root: Path) -> int:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Create a dataset case skeleton.")
-    parser.add_argument("title", help="Short case title, for example 'Supplydesk redesign'.")
+    parser.add_argument("title", help="Short case title, for example 'Customer directory redesign'.")
     parser.add_argument("--root", type=Path, help="Override the cases directory for testing or a separate dataset.")
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args()

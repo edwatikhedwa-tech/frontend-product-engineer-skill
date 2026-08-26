@@ -1,6 +1,6 @@
 # Reference Research
 
-Search by the product or UX problem, not by vague style terms such as “beautiful dashboard”, “modern SaaS”, or “premium UI”. Prefer queries such as CRM company list, customer directory, supplier search results, bulk actions table, filter builder, split view, settings navigation, company profile, or data-heavy dashboard.
+Search by the product or UX problem, not by vague style terms such as “beautiful dashboard”, “modern SaaS”, or “premium UI”. Prefer queries such as CRM company list, customer directory, catalog search results, bulk actions table, filter builder, split view, settings navigation, profile, or data-heavy dashboard.
 
 ## Choose reference categories deliberately
 

@@ -9,8 +9,8 @@ Write-Output '== Doctor =='
 python scripts\doctor.py
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-Write-Output '== Installer dry-run =='
-python scripts\install.py --agent all --scope global --dry-run | Out-Null
+Write-Output '== Installer plan =='
+python scripts\install.py --agent all --scope global --plan | Out-Null
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 Write-Output '== New case dry-run =='

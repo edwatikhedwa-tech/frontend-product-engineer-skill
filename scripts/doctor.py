@@ -35,7 +35,7 @@ def check_structure() -> None:
         "SKILL.md", "README.md", "VERSION", "CHANGELOG.md", "LICENSE", ".gitignore",
         "config/repository.json", "knowledge/PRINCIPLES.md", "knowledge/LESSONS.md",
         "knowledge/ANTI_PATTERNS.md", "workflows/CREATE.md", "workflows/REDESIGN.md",
-        "workflows/EXTEND.md", "workflows/REVIEW.md", "quality/QUALITY_GATE.md",
+        "workflows/EXTEND.md", "workflows/REVIEW.md", "quality/QUALITY_GATE.md", "quality/AUDIT_PROTOCOL.md",
         "scripts/install.py", "scripts/sync.py", "scripts/doctor.py", "scripts/new_case.py",
         "docs/SOURCES.md", "tech-radar/TECH_RADAR.md", "dataset/README.md",
     ]
@@ -64,6 +64,8 @@ def check_skill_metadata() -> None:
     for field in ("name", "description"):
         if not re.search(rf"^{field}:\s*.+$", frontmatter, re.MULTILINE):
             error(f"SKILL.md frontmatter is missing {field}.")
+    if not re.search(r"^name:\s*front\s*$", frontmatter, re.MULTILINE):
+        error("SKILL.md frontmatter name must be front for /front invocation.")
     if "CODE COMPLETE != TASK COMPLETE" not in path.read_text(encoding="utf-8"):
         error("SKILL.md is missing the core quality law.")
     else:
@@ -76,10 +78,12 @@ def check_config() -> None:
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         error(f"repository.json is invalid: {exc}")
         return
-    required = ("name", "canonical_repository", "version", "update_strategy")
+    required = ("name", "skill_name", "canonical_repository", "version", "update_strategy")
     missing = [key for key in required if not config.get(key)]
     if missing:
         error(f"repository.json is missing: {', '.join(missing)}")
+    elif config.get("skill_name") != SKILL_NAME:
+        error(f"repository.json skill_name must be {SKILL_NAME}.")
     elif not str(config["canonical_repository"]).startswith("https://github.com/"):
         error("canonical_repository is not an HTTPS GitHub URL.")
     else:

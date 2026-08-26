@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — 2026-08-26
+
+- Added browser-first verification as a mandatory `INSPECT → PLAN → IMPLEMENT → RUN → BROWSER AUDIT → FIX → VERIFY → RE-AUDIT → DONE` workflow.
+- Added evidence-driven UI audit guidance for visual hierarchy, layout, typography, component consistency, responsive behavior, interaction states, accessibility, content robustness, and runtime/console/network checks.
+- Strengthened the independent reviewer mode and added objective audit findings with severity, actual, problem, expected behavior, constraints, acceptance criteria, and evidence.
+- Added the audit → fix → verify loop, explicit re-audit, and separate NOT VERIFIED handling when tools or surfaces are unavailable.
+- Expanded accessibility, runtime, responsive, and long-content checks and kept the P0/P1/P2/P3 quality gate.
+- Added anti-AI-slop guidance for unjustified cards, gradients, shadows, radii, icons, badges, colors, animation, chrome, and generic patterns without banning contextually valid choices.
+- Made the skill project-agnostic and changed the runtime invocation name to `front` (`/front` in Claude Code and `$front` in Codex); the repository remains `frontend-product-engineer-skill`.
+
 ## 0.2.0 — 2026-08-23
 
 - Added an explicit Design Director stage between product thinking and reference research/implementation.

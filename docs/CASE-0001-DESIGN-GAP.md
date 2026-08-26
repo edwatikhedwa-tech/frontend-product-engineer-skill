@@ -2,9 +2,9 @@
 
 ## Evidence boundary
 
-The canonical v0.1.0 checkout available during the v0.2.0 update contains no `dataset/cases/CASE-0001-supplydesk-redesign/`, `review.md`, or `lessons.md`. The Supplydesk repository also contains no matching case artifact. Therefore the historical case cannot be independently inspected here and is not recreated from memory.
+The canonical v0.1.0 checkout available during the v0.2.0 update contained no complete case artifact, review, or lessons file for the historical benchmark. Therefore the case is not recreated from memory and no visual conclusion is claimed here.
 
-The maintainer supplied this benchmark summary: v0.1.0 successfully enforced real-app execution, browser evidence, responsive and overflow checks, content stress, independent review, P0/P1/P2 fixes, and dataset creation; the resulting redesign remained too close to generic enterprise SaaS/admin UI. The summary is recorded as user-provided evidence, not as a locally verified case file.
+The maintainer supplied a benchmark summary: v0.1.0 successfully enforced real-app execution, browser evidence, responsive and overflow checks, content stress, independent review, P0/P1/P2 fixes, and dataset creation; the resulting redesign still remained too close to generic enterprise UI. The summary is recorded as user-provided evidence, not as a locally verified case file.
 
 ## Confirmed from v0.1.0 repository
 

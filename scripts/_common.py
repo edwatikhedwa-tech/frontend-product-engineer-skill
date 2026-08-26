@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 
-SKILL_NAME = "frontend-product-engineer"
+SKILL_NAME = "front"
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VERSION_FILE = REPO_ROOT / "VERSION"
 CONFIG_FILE = REPO_ROOT / "config" / "repository.json"

@@ -4,6 +4,8 @@
 
 GitHub is the canonical source of truth. A clone is the editable source bundle. A global or project installation is a copied runtime bundle for Codex or Claude Code. The skill does not download GitHub before every frontend task.
 
+The repository name remains `frontend-product-engineer-skill`, while the runtime skill name is `front`. Installations therefore expose `/front` in Claude Code and `$front` in Codex without creating a second skill.
+
 ## Progressive disclosure
 
 The host first sees the SKILL.md frontmatter and concise routing instructions. When the skill is selected, it reads the root instructions. The root routes to one workflow and only the specialist knowledge and quality documents relevant to the task. Dataset cases and the full radar are not loaded by default.

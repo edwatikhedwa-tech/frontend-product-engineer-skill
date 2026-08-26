@@ -1,6 +1,16 @@
 # Product Thinking
 
-Before UI implementation, answer:
+Before planning or UI implementation, establish the project context:
+
+- product and primary users;
+- primary jobs, decisions, and critical flows;
+- existing design language, tokens, and component system;
+- business, technical, accessibility, and compatibility constraints;
+- protected areas and behavior that must not change;
+- technical stack, installed versions, and project commands;
+- project-specific acceptance criteria and required evidence.
+
+Then answer:
 
 1. Who is the primary user and what context are they in?
 2. What job are they trying to complete?

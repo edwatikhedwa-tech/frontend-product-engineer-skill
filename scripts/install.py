@@ -12,11 +12,13 @@ from _common import REPO_ROOT, SKILL_NAME, display_path, home_path, iter_bundle_
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Install frontend-product-engineer for Codex and/or Claude Code.")
+    parser = argparse.ArgumentParser(description="Install the front skill for Codex and/or Claude Code.")
     parser.add_argument("--agent", choices=("codex", "claude", "all"), default="all")
     parser.add_argument("--scope", choices=("global", "project"), default="global")
     parser.add_argument("--project", type=Path, help="Existing project directory for --scope project.")
-    parser.add_argument("--dry-run", action="store_true", help="Show planned actions without writing files.")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--plan", "-Plan", "--dry-run", "-DryRun", dest="plan", action="store_true", help="Show planned actions without writing files.")
+    mode.add_argument("--apply", "-Apply", action="store_true", help="Apply the installation and write files.")
     return parser.parse_args()
 
 
@@ -89,12 +91,12 @@ def main() -> int:
             print(f"[ERROR] Project directory does not exist: {args.project}")
             return 2
 
-    print(f"frontend-product-engineer {read_version()} from {display_path(REPO_ROOT)}")
-    print(f"Mode: agent={args.agent}, scope={args.scope}, dry-run={args.dry_run}")
+    print(f"front {read_version()} from {display_path(REPO_ROOT)}")
+    print(f"Mode: agent={args.agent}, scope={args.scope}, plan={args.plan}")
     for label, target in destinations(args.agent, args.scope, args.project):
         print(f"[{label}] destination: {display_path(target)}")
-        install_one(target, args.dry_run)
-    print("[OK] Installation plan completed." if args.dry_run else "[OK] Skill installation completed.")
+        install_one(target, args.plan)
+    print("[OK] Installation plan completed." if args.plan else "[OK] Skill installation completed.")
     return 0
 
 

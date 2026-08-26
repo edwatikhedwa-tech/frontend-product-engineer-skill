@@ -1,6 +1,6 @@
 # Quality gate
 
-The quality gate is mandatory after implementation and before DONE. Engineering quality and design quality are separate acceptance conditions; passing one does not compensate for failing the other.
+The quality gate is mandatory after implementation and before DONE. Follow [`AUDIT_PROTOCOL.md`](AUDIT_PROTOCOL.md) for the inspect → run → browser audit → fix → verify → re-audit loop. Engineering quality and design quality are separate acceptance conditions; passing one does not compensate for failing the other.
 
 ## Engineering Gate
 
@@ -10,6 +10,7 @@ The quality gate is mandatory after implementation and before DONE. Engineering 
 - [ ] Intermediate desktop behavior was inspected.
 - [ ] Realistic content and stress content were tested.
 - [ ] DOM/browser overflow, clipping, overlap, and intentional scroll regions were checked where tooling permits.
+- [ ] Console, runtime, failed-request, and relevant network behavior were checked where tooling permits.
 - [ ] Keyboard, focus, semantics, labels, contrast, and reduced-motion behavior were reviewed.
 - [ ] Automated accessibility checks were run when justified and available.
 - [ ] Interaction, loading, empty, error, permission, and recovery states were checked.
@@ -19,7 +20,7 @@ Defect gate:
 
 - P0: 0
 - P1: 0
-- P2: fixed or explicitly accepted with reason
+- P2: fixed or explicitly accepted with a documented trade-off
 - P3: may remain with a documented tradeoff
 
 ## UX Gate

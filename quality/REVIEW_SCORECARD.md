@@ -7,6 +7,7 @@ Use findings and evidence, not a single self-score. Mark each dimension WEAK, AC
 | Dimension | Questions | Evidence |
 | --- | --- | --- |
 | Functionality | Does the requested flow work in the real app? |  |
+| Runtime stability | Are console errors, uncaught runtime errors, failed requests, and recovery behavior understood? |  |
 | Navigation | Can the user enter, orient, and recover? |  |
 | Information architecture | Does grouping match the user’s mental model? |  |
 | Visual hierarchy | Can the user tell where to start and what matters? |  |
@@ -46,4 +47,4 @@ For REDESIGN, link the BEFORE → AFTER matrix and record:
 - why the result is not merely a tidy token restyle;
 - whether missing BEFORE evidence prevents a conclusion.
 
-End with P0/P1/P2/P3 counts and evidence links. A 9/10 statement or EXCEPTIONAL label without evidence is not a passing review.
+End with P0/P1/P2/P3 counts and evidence links. A 9/10 statement or EXCEPTIONAL label without evidence is not a passing review. If browser, runtime, network, accessibility, or viewport checks were unavailable, mark them `NOT VERIFIED`.

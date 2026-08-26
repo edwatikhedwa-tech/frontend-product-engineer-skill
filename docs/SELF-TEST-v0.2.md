@@ -1,10 +1,10 @@
 # v0.2.0 conceptual self-test
 
-This is a process self-test, not a claim that the missing historical CASE-0001 artifacts were re-run.
+This is a process self-test, not a claim that a historical product run was re-executed.
 
 ## Benchmark prompt
 
-Assume the v0.2.0 skill receives the same Supplydesk redesign context described by the maintainer: the existing UI is usable after engineering fixes but remains too close to generic enterprise SaaS/admin UI.
+Assume the v0.2.0 skill receives an existing product redesign where engineering fixes made the interface usable, but the result still resembles a generic enterprise application.
 
 ## Expected additional behavior
 
@@ -14,7 +14,7 @@ Before substantial implementation, the agent must:
 2. capture BEFORE evidence and record the existing visual language without rewriting history;
 3. produce a Design Director direction with personality, visual thesis, hierarchy, composition, typography, density, surfaces, interaction character, deliberate exclusions, design rationale, and rendered acceptance criteria;
 4. choose problem-relevant reference categories, including at least a visual/art-direction or typography category when the generic-language problem is real;
-5. synthesize principles from multiple references into a new Supplydesk-specific system rather than list Salesforce/HubSpot/Linear;
+5. synthesize principles from multiple references into a new product-specific system rather than list admired products;
 6. implement a representative slice from that direction;
 7. run the real application and capture matched AFTER evidence;
 8. switch to Visual Critic mode and run the anti-generic gate;
@@ -25,5 +25,5 @@ Before substantial implementation, the agent must:
 
 ## Self-test conclusion
 
-v0.2.0 contains operational routing and gates for these additional actions. This is a conceptual check against the maintainer’s benchmark summary. It is not a visual re-run because the case artifacts and Supplydesk run were intentionally not part of this skill-only task.
+v0.2.0 contains operational routing and gates for these additional actions. This is a conceptual check against a maintainer-provided benchmark summary. It is not a visual re-run because the historical case artifacts and application were not part of this skill-only task.
 
