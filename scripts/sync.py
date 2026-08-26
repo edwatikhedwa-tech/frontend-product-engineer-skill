@@ -33,7 +33,8 @@ def raw_version_url(repository: str) -> str:
     if parsed.netloc != "github.com" or len(parts) < 2:
         raise ValueError("canonical_repository must be a GitHub repository URL")
     owner, name = parts[0], parts[1].removesuffix(".git")
-    return f"https://raw.githubusercontent.com/{owner}/{name}/main/VERSION"
+    # Use the explicit ref path so a branch-level raw cache cannot report a stale VERSION.
+    return f"https://raw.githubusercontent.com/{owner}/{name}/refs/heads/main/VERSION"
 
 
 def remote_version(repository: str) -> str | None:
